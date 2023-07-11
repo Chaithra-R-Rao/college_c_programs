@@ -5,9 +5,9 @@
 int main()
 {
     int a[20],n,mid,low,high,i,key;
-    printf("enter the value for n\n");
+    printf("Enter the value for n\n");
     scanf("%d",&n);
-    printf("enter %d elements in ascending order\n",n);
+    printf("Enter %d elements in ascending order\n",n);
 
     for(i=0;i<n;i++)
         scanf("%d",&a[i]);
@@ -23,7 +23,7 @@ int main()
          mid =(low+high)/2;
          if(a[mid]==key)
          {
-             printf("The key is found at the position %d",mid);
+             printf("The key element is found at the position %d",mid+1);
              exit(0);
          }
          if(key>a[mid])
@@ -31,6 +31,6 @@ int main()
          else
             high=mid-1;
      }
-   printf("the key is not found\n");
+   printf("The key element is not found\n");
   return 0;
 }
